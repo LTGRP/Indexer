@@ -10,6 +10,19 @@ import java.beans.PropertyChangeListener;
  * 1067 board is EXPERIMENTAL and untested.
  * Note: no checking is done to see if setting a new location is the same as the current location.
  * @author Bill Ooms Copyright (c) 2012 Studio of Bill Ooms all rights reserved
+ * 
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 public interface StepperBoard {
 	/** Default acceleration is the max for 1062 board */
