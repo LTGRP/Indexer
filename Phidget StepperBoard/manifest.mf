@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+OpenIDE-Module: com.billooms.stepperboard/1
+OpenIDE-Module-Implementation-Version: 0
+OpenIDE-Module-Localizing-Bundle: com/billooms/stepperboard/Bundle.properties
+OpenIDE-Module-Requires: org.openide.windows.WindowManager
+

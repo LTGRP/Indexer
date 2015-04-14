@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+<!DOCTYPE Indexer PUBLIC "-//IDN billooms.com//DTD Indexer file format 1.0//EN" "http://www.billooms.com/dtds/indexer1_0.dtd">
+-->
+<Indexer version="1.0">
+  <IndexWheel nHoles='14' phase='0.0000' name='Index14'>
+  </IndexWheel>
+  <IndexWheel nHoles='20' phase='0.0000' name='Index20'>
+  </IndexWheel>
+  <IndexWheel nHoles='24' phase='0.0000' name='Index24'>
+  </IndexWheel>
+  <IndexWheel nHoles='36' phase='0.0000' name='Index36'>
+  </IndexWheel>
+  <IndexWheel nHoles='48' phase='0.0000' name='Index48'>
+  </IndexWheel>
+  <IndexWheel nHoles='60' phase='0.0000' name='Index60'>
+  </IndexWheel>
+  <IndexWheel nHoles='72' phase='0.0000' name='Index72'>
+  </IndexWheel>
+</Indexer>

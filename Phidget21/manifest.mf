@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+OpenIDE-Module: com.billooms.phidget21/2
+OpenIDE-Module-Implementation-Version: 8
+OpenIDE-Module-Localizing-Bundle: com/billooms/phidget21/Bundle.properties
+OpenIDE-Module-Specification-Version: 2.1
+

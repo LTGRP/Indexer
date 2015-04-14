@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+OpenIDE-Module: com.billooms.indexercontrol/1
+OpenIDE-Module-Implementation-Version: 0
+OpenIDE-Module-Install: com/billooms/indexercontrol/Installer.class
+OpenIDE-Module-Layer: com/billooms/indexercontrol/layer.xml
+OpenIDE-Module-Localizing-Bundle: com/billooms/indexercontrol/Bundle.properties
+OpenIDE-Module-Requires: org.openide.windows.WindowManager
+

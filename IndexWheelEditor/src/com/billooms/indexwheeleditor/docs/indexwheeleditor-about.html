@@ -1,0 +1,77 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>About IndexWheel Editor</title>
+        <link rel="stylesheet" href="nbdocs:/org/netbeans/modules/usersguide/ide.css" type="text/css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h2>About IndexWheel Editor</h2>
+        <p>
+            The IndexWheel Editor Window is the main user interface for viewing/creating/changing IndexWheels.
+            The top portion of the window shows a graphical representation of the most recently selected wheel.
+        </p>
+        <p>
+        	To select a particular IndexWheel for viewing/editing, simply click on one of the 
+        	IndexWheels in the lower left portion of the window. 
+        	The number of IndexWheels in the current project can be increased or decreased as needed.
+        </p>
+        <p>
+        	After a particular IndexWheel has been selected, it's basic properties can be edited in several ways:
+        </p>
+        <p>
+        	First, one can right-click on the selected IndexWheel and choose "Properties". 
+        	A new window will pop up to allow editing of the number of holes, the display name, 
+        	and the phase. 
+        	Note that the rotation cannot be directly edited, as it is changed to be in sync 
+        	with the stepper motor driving the spindle by the Control Window.
+        </p>
+        <p>
+        	Second, one can go to the main menu and select "Window" -> "Properties" which will 
+        	bring up a window on the right edge of the display area. 
+        	This window will remain open until explicitly closed by the user. 
+        	Selecting a different IndexWheel will display the new data in the Properties WIndow.
+        </p>
+        <p>
+        	Third, there are controls in the bottom of the IndexWheel Editor Window for changing 
+        	the properties. 
+        	One can change the number of holes or change the name. 
+        	To change the phase, one can type in a number directly (in the range 0.0 to 1.0), or 
+        	one can move the slider. 
+        </p>
+        <p>
+        	Holes can be filled or un-filled by simply doing a single click on any hole 
+        	shown in the display area of the window. 
+        	Each click will toggle the state of the hole. 
+        	One can also fill in some number of holes with the controls in the "Fill Holes" 
+        	panel near the lower right of the IndexWheel Editor Window. 
+        	Simply specify the first hole to be filled (note that the holes start with zero), 
+        	indicate the spacing of the filled holes, and select the "Fill" button. 
+        	This can be done multiple times with various values. 
+        	The fills are accumulated from each press of the "Fill" button. 
+        	All holes can be filled with the "Fill All" button. 
+        	All holes can be returned to their un-filled position with the "Clear All" button.
+        </p>
+		<p>
+			A selected IndexWheel can be deleted from the list by right-clicking on an IndexWheel
+			in the list and selecting "Delete". 
+			Note that you won't be able to delete the last one -- there must always be at 
+			least one IndexWheel in the list. 
+		</p>
+    </body>
+</html>
+<!--
+Tip: to create a link which will open in an external web browser, try:
+<object classid="java:org.netbeans.modules.javahelp.BrowserDisplayer">
+    <param name="content" value="http://www.netbeans.org/">
+    <param name="text" value="<html><u>http://www.netbeans.org/</u></html>">
+    <param name="textFontSize" value="medium">
+    <param name="textColor" value="blue">
+</object>
+To create a link to a help set from another module, you need to know the code name base and path, e.g.:
+<a href="nbdocs://org.netbeans.modules.usersguide/org/netbeans/modules/usersguide/configure/configure_options.html">Using the Options Window</a>
+(This link will behave sanely if that module is disabled or missing.)
+-->

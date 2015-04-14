@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+OpenIDE-Module: com.billooms.indexerfiletype/1
+OpenIDE-Module-Implementation-Version: 0
+OpenIDE-Module-Layer: com/billooms/indexerfiletype/layer.xml
+OpenIDE-Module-Localizing-Bundle: com/billooms/indexerfiletype/Bundle.properties
+

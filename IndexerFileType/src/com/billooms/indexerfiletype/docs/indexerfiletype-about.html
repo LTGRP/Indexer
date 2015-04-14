@@ -1,0 +1,62 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>About Indexer XML Files</title>
+        <link rel="stylesheet" href="nbdocs:/org/netbeans/modules/usersguide/ide.css" type="text/css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h2>About Indexer XML Files</h2>
+        <p>
+            Information is saved in files using an .xml file format. 
+            This is a somewhat human-readable format that can be edited by any text editor with care. 
+            A document type definition (dtd) for the file is available at 
+            <a href="http://www.billooms.com/dtds/indexer1_0.dtd">www.billooms.com/dtds/indexer1_0.dtd</a>.
+			The second line in the xml files contains a link to this file. 
+			By default, it is commented out to avoid problems if you are using a computer that 
+			is not connected to the internet. 
+			If you want to edit the file manually, un-comment the second line and use an 
+			editor that understands xml formats. 
+			Your editor will have a command to validate that the edits you made conform to the 
+			rules in the dtd file.
+        </p>
+        <h2>Menu Actions</h2>
+        <h3>File</h3>
+		<ul>
+			<li>
+				<b>New File...</b> -- Create a new file from a default template and open it.
+			</li>
+			<li>
+				<b>Open XML File...</b> -- Open a previously saved xml file
+			</li>
+			<li>
+				<b>Save XML File</b> -- Save the file after edits have been made.
+			</li>
+			<li>
+				<b>Save XML File As...</b> -- Save a copy of the data to a new file, leaving the old file unchanged.
+			</li>
+			<li>
+				<b>Revert to Saved File</b> -- Go back to the last saved version of the file.
+			</li>
+			<li>
+				<b>Save All</b> -- After a file has been opened and modified, this action becomes 
+				available as a reminder that changes have been made.
+			</li>
+		</ul>
+    </body>
+</html>
+<!--
+Tip: to create a link which will open in an external web browser, try:
+<object classid="java:org.netbeans.modules.javahelp.BrowserDisplayer">
+    <param name="content" value="http://www.netbeans.org/">
+    <param name="text" value="<html><u>http://www.netbeans.org/</u></html>">
+    <param name="textFontSize" value="medium">
+    <param name="textColor" value="blue">
+</object>
+To create a link to a help set from another module, you need to know the code name base and path, e.g.:
+<a href="nbdocs://org.netbeans.modules.usersguide/org/netbeans/modules/usersguide/configure/configure_options.html">Using the Options Window</a>
+(This link will behave sanely if that module is disabled or missing.)
+-->

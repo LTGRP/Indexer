@@ -1,0 +1,120 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>About Indexer Control</title>
+        <link rel="stylesheet" href="nbdocs:/org/netbeans/modules/usersguide/ide.css" type="text/css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h2>About Indexer Control</h2>
+        <p>
+            The Control Window is located in the lower right of the display area and is 
+            the main means of controlling the stepper motor. 
+        </p>
+        <p>
+        	The "Engage" button turns on the power to the stepper motor. 
+        	Whenever power is applied to the stepper, that position becomes the new zero reference point. 
+        </p>
+        <p>
+        	The "GoToZero" button will always return the spindle back to the "zero" reference position.
+        	Note that the spindle wraps around from 360 degrees back to 0 degrees. 
+        	So if, for example, the rotation has gone to a total rotation of 370 degrees, then 
+        	pressing the "GoToZero" button will cause the spindle to go back only 10 degrees 
+        	(which is the same as zero). 
+        </p>
+        <p>
+        	The "GoToNext" button causes the stepper motor to rotate to the next "filled" hole 
+        	on the most recently selected IndexWheel.  
+        </p>
+        <p>
+        	The speed of the spindle rotation is controlled by the slider with the "Slow" and "Fast" label.
+        	When the slider is all the way to the right, the spindle rotates at 10rpm unless limited to a 
+        	smaller value by the stepper driver). 
+        	You can set the speed slower so that you can make cuts while rotating from one index point
+        	to the next.
+        </p>
+        <p>
+        	As a reminder, the most recently selected IndexWheel's name is displayed in the 
+        	Control Window. Also, the current position of the spindle (in degrees) is shown.
+        </p>
+        <p>
+        	The user can manually rotate the spindle by setting the speed slider as desired 
+        	and pressing the "CCW" or "CW" button. 
+        	This is useful in the event that the user needs to align to a certain position prior 
+        	to resetting the zero reference. 
+        	(Alternately, the user may turn off power to the stepper motor with the "Engage" 
+        	button, manually rotate the spindle, and then "Engage" the stepper again).
+        </p>
+        <h2>Indexer Preferences -- Hardware</h2>
+        <p>
+            In addition to a variety of common preference settings, the "Hardware" tab must be 
+            set by the user to indicate certain unique values for the particular hardware being used.
+        </p>
+        <p>
+        	Stepper motors are usually in 1.8 degree steps (200 steps per rotation) or 
+        	0.9 degrees per step (400 steps per rotation). 
+        	This value must be set to be consistent with the stepper motor you are using. 
+        </p>
+        <p>
+        	Micro-stepping is a function of the driver board you are using. 
+        	The Phidgets 1062 board uses 1/2 step micro-stepping, 
+        	and the 1063 board uses 1/16 step micro-stepping.
+        </p>
+        <p>
+        	The number of teeth on the small pulley/gear (i.e. the one on the motor) and the
+        	number of teeth on the large pulley/gear (i.e. on the spindle) must be specified.
+        </p>
+        <p>
+        	The Phidgets 1062 board can drive up to 4 stepper motors. 
+        	You need to indicate which one of the 4 positions connects to the spindle stepper motor.
+        	The Phidgets 1063 board only drives a single motor, so this cannot be changed if you have
+        	a 1063 board connected.
+        </p>
+        <p>
+        	When using a 1063 board, you can set the motor's current limit with software. 
+        	See the 1063 manual for details on setting the current limit. 
+        	Do not set this to a value greater than the maximum current for your stepper motor 
+        	or more than your power supply can provide.
+        </p>
+        <p>
+        	The acceleration determines how fast the stepper motor comes up to speed (and slows down). 
+        	If this is set to too high a number, your stepper motor may lose counts if it 
+        	doesn't have sufficient torque to accelerate the spindle. 
+        	This might be the case if you have a very heavy chuck mounted on the spindle.
+        	The default value is set to a very safe value for a typical JET mini-lathe with a 
+        	VicMarc V-100 chuck (which weighs 3.6 pounds). 
+        </p>
+        <h2>Menu Actions</h2>
+        <h3>Control</h3>
+		<ul>
+			<li>
+				<b>Go To Zero</b> -- Return the spindle to the zero reference position as outlined above.
+			</li>
+			<li>
+				<b>Go To Next</b> -- Rotate the spindle to the next filled hole as outlined above.
+			</li>
+			<li>
+				<b>Set Zero</b> -- Set the current position of the spindle to become the new zero reference point.
+			</li>
+			<li>
+				<b>Set Position to...</b> -- Enter a spindle rotation (in degrees). 
+				This is a convenient means to set the current position of the spindle to a specific value. 
+			</li>
+		</ul>
+    </body>
+</html>
+<!--
+Tip: to create a link which will open in an external web browser, try:
+<object classid="java:org.netbeans.modules.javahelp.BrowserDisplayer">
+    <param name="content" value="http://www.netbeans.org/">
+    <param name="text" value="<html><u>http://www.netbeans.org/</u></html>">
+    <param name="textFontSize" value="medium">
+    <param name="textColor" value="blue">
+</object>
+To create a link to a help set from another module, you need to know the code name base and path, e.g.:
+<a href="nbdocs://org.netbeans.modules.usersguide/org/netbeans/modules/usersguide/configure/configure_options.html">Using the Options Window</a>
+(This link will behave sanely if that module is disabled or missing.)
+-->
