@@ -12,6 +12,7 @@ INSTALLATION:
 This software was generated with NetBeans IDE. 
 It requires Java6 or Java7. It may or may not run on Java8 without modification. 
 It requires Phidgets drivers to be installed on your computer.
+I do not intend to make any further edits and/or improvements to this software.
 
 LICENSE: 
 
