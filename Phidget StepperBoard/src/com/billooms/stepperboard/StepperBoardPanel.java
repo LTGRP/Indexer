@@ -13,7 +13,8 @@ import org.openide.NotifyDescriptor;
 
 /**
  * StepperBoard is used to monitor the state of a Phidgets stepper board
- * This is specifically written for a Phidgets 1062 board for 4 unipolar steppers
+ * This is specifically written for a Phidgets 1062 and 1063 boards.
+ * 1067 board is EXPERIMENTAL and untested.
  * Note: no checking is done to see if setting a new location is the same as the current location.
  * @author Bill Ooms Copyright (c) 2011 Studio of Bill Ooms all rights reserved
  * 

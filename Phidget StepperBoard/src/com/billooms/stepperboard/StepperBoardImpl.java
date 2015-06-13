@@ -29,6 +29,7 @@ import org.openide.util.lookup.ServiceProvider;
 /**
  * StepperBoard is used to monitor the state of a Phidgets stepper board.
  * This is specifically written for a Phidgets 1062 and 1063 boards.
+ * 1067 board is EXPERIMENTAL and untested.
  * Note: no checking is done to see if setting a new location is the same as the current location.
  * @author Bill Ooms Copyright (c) 2011 Studio of Bill Ooms all rights reserved
  * 
@@ -51,6 +52,7 @@ public class StepperBoardImpl implements StepperBoard {
 	// Saved States from ChangeListeners
 	private final static int MAXSTEPPERS = 4;
 	private final static int MAXINPUTS = 4;
+    private final static String[] boardName = {"1062", "1063", "1067"};
 	private boolean inputState[] = new boolean[MAXINPUTS];
 	private boolean engaged[] = new boolean[MAXSTEPPERS];
 	private boolean stopped[] = new boolean[MAXSTEPPERS];
@@ -237,7 +239,7 @@ public class StepperBoardImpl implements StepperBoard {
 	
 	/**
 	 * Get the type of board.
-	 * @return 0 is 1062, 1 is 1063, 2 is 1063
+	 * @return 0 is 1062, 1 is 1063, 2 is 1067
 	 */
 	@Override
 	public int getType() {
@@ -730,7 +732,7 @@ public class StepperBoardImpl implements StepperBoard {
 		if (ex.getErrorNumber() == PhidgetException.EPHIDGET_UNKNOWNVAL) {
 			return;		// don't show this
 		}
-		NotifyDescriptor d = new NotifyDescriptor.Message("1062 " + st + "\n" + ex.getDescription(), NotifyDescriptor.ERROR_MESSAGE);
+		NotifyDescriptor d = new NotifyDescriptor.Message(boardName[type] + " " + st + "\n" + ex.getDescription(), NotifyDescriptor.ERROR_MESSAGE);
 		DialogDisplayer.getDefault().notify(d);
 	}
 

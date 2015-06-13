@@ -11,7 +11,7 @@ import org.openide.awt.ActionReference;
 import org.openide.util.Lookup;
 
 /**
- * Top component for displaying the status of a Phidgets 1062 board.
+ * Top component for displaying the status of a Phidgets Stepper controller board.
  * @author Bill Ooms. Copyright 2011 Studio of Bill Ooms. All rights reserved.
  * 
  * This program is free software: you can redistribute it and/or modify

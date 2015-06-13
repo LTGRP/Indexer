@@ -38,7 +38,7 @@ public interface StepperBoard {
 	
 	/** 
 	 * Names for the 4 steppers for 1062 board. 
-	 * A 1063 board should only use S0 
+	 * A 1063 and 1067 board should only use S0 
 	 */
 	static enum Stepper {
 		/** Stepper connected to terminals 0 */
@@ -89,26 +89,26 @@ public interface StepperBoard {
 	
 	/**
 	 * Get the type of board.
-	 * @return 0 is 1062, 1 is 1063
+	 * @return 0 is 1062, 1 is 1063, 2 is 1067
 	 */
 	int getType();
 	
 	/**
 	 * Get the micro-step value for the connected board type;
-	 * @return 1062 is 2; 1063 is 16
+	 * @return 1062 is 2; 1063 is 16; 1067 is 16
 	 */
 	int getMicroStep();
 	
 	/**
 	 * Get the number of inputs.
-	 * A 1062 board as 0 and a 1063 board has 4.
+	 * A 1062 and 1067 board has 0 and a 1063 board has 4.
 	 * @return number of inputs
 	 */
 	int getNInputs();
 	
 	/**
 	 * Get the number of steppers supported by this board.
-	 * A 1062 has 4 and a 1063 has 1.
+	 * A 1062 has 4 and a 1063 and 1067 has 1.
 	 * @return number of steppers
 	 */
 	int getNSteppers();

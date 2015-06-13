@@ -201,13 +201,19 @@ final class PreferencesPanel extends javax.swing.JPanel {
 			wiredCombo.setEnabled(true);
 			currentField.setEnabled(false);
 			boardLabel.setText("Phidgets 1062 board is connected");
-		} else {
+		} else if (stepBoard.getType() == 1) {
 			microField.setValue(16);
 			wiredCombo.setSelectedIndex(0);
 			wiredCombo.setEnabled(false);
 			currentField.setEnabled(true);
 			boardLabel.setText("Phidgets 1063 board is connected");
-		}
+		} else {
+			microField.setValue(16);
+			wiredCombo.setSelectedIndex(0);   // only 1 motor
+			wiredCombo.setEnabled(false);     // and you can't change it
+			currentField.setEnabled(true);
+			boardLabel.setText("Phidgets 1067 board is connected");
+        }
 	}
 
 	void store() {
